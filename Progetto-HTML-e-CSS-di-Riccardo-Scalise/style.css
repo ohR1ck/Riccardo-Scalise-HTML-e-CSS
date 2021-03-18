@@ -1,0 +1,132 @@
+html,body{height: 100%;}
+body {
+  background: #dddddd;
+  font-family: cocogoose;
+  }
+
+  /*------------------------
+  generali
+  ------------------------*/
+
+
+
+/*------------------------
+header
+------------------------*/
+
+.header {background: #333;}
+
+.header_nome {color: #fff; float: left;display: block;padding: 15px; font-family: cocogoose light;text-decoration: none;}
+.header__menu{float: right;margin: 0;padding: 0;}
+.header_menu_item{display: inline-block; font-family: cocogoose light;}
+.header_menu_item a{color: white;display: block;padding: 15px;text-decoration: none;}
+.header_menu_item a:hover{background: #000;}
+.header__icon-bar {display: block;float: right;padding: 20px;display: none;}
+.header__icon-bar span{display: block;height: 3px; width: 30px; background: #fff; margin-bottom: 5px;}
+
+
+/*------------------------
+cover
+------------------------*/
+.cover{height: 70%;background: #dddddd;background-size: cover;-o-background-size: cover;-moz-background-size: cover;background-position: center center;}
+.cover_caption{display: table;height: 100%;width: 100%;position: relative;z-index: 1;padding: 0 20px;}
+.cover_caption_copy{display: table-cell;vertical-align: middle;text-align: center;color: #333;}
+
+/*------------------------
+Cards
+------------------------*/
+.cards {max-width: 1200px;margin: 40px auto;background:#fff; }
+.card{width: 30%;margin: 0 1.5%;float: left;}
+.card_image{width: 100%; height: auto;align-items: center;padding: 10%;padding-top: 17%;padding-bottom: 15%;}
+.card_works{width: 100%;padding: 1%;font-size: 20px;padding-bottom: 3.5%;padding-top: 8%;text-align: center;background: #fff;}
+
+
+/*------------------------
+Banner
+------------------------*/
+.banner{max-width: 1200px;margin: 40px auto;}
+.banner_copy{width: 100%;float:left;height: 100%; display: table;background: #fff;padding: 10%;}
+.banner_copy_text{ vertical-align: middle;text-align: center;}
+.banner_copy_text h3{font-size: 25px;margin-bottom: 0;}
+.banner_copy_text p{font-size: 20;padding-top: 7%;font-family: arial; }
+
+
+/*------------------------
+Contact
+------------------------*/
+.contacts {max-width: 1200px; margin: 20px auto;}
+.contact_copy{margin: 0 auto;padding: 20px;text-align: center;padding: 10%;background: #fff;padding-bottom: 17%;}
+.contact_link_site{width: 100%; float:left; font-family: arial;padding-top: 2%; text-align: center;}
+.contact_title{margin: 0 1.5%;padding: 1%;font-size: 20px;padding-bottom: 3.5%;text-align: center;}
+.contact_email{font-family: arial;text-align: center;padding-top: 20px;}
+.contact_link_site a{text-decoration: none;color:#000; }
+.contact_link_site a:hover{background: #333;color:#fff; }
+
+
+
+/*------------------------
+footer
+------------------------*/
+.footer {background:#333; padding: 30px;color: #fff;font-family: arial;margin-top: 40px;text-align: center;}
+
+
+
+/*------------------------
+Tablet
+------------------------*/
+@media (max-width: 998px){
+
+
+}
+
+/*------------------------
+Smartphone
+------------------------*/
+@media (max-width: 767px){
+
+.header{position: fixed; z-index: 100;width: 100%;}
+.header__icon-bar {display: block;}
+.header__menu {width: 100%;height: 0px;overflow: hidden;}
+.header_menu_item{display: block;}
+.is-open{height: 165px; overflow: auto;}
+
+/*------------------------
+cover smartphone
+------------------------*/
+.cover{height: 100%;}
+
+
+/* Cards */
+.card{width: 90%;margin:5%;}
+.card_works{margin: 0 1.5%;padding: 5%;font-size: 20px;padding-bottom: 3.5%;}
+
+/*------------------------
+Banner
+------------------------*/
+
+.banner_copy{width: 100%;}
+
+}
+
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; }
+*:first-child+html .clearfix { zoom: 1; }
+
+*,
+*:before,
+*:after{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*{margin: 0; padding: 0;}
